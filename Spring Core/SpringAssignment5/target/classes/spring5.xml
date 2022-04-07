@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<bean id = "Customer1" class="Customer">
+		<property name="customerId" value = "1" />
+		<property name="customerName" value = "Sathya" />
+		<property name="customerContact" value = "9887656788" />
+	</bean>
+	
+	<bean id = "Customeradd" class="Address" >
+		<property name="street" value = "usman road"/>
+		<property name="city" value = "chennai"/>
+		<property name="state" value = "andhra"/>
+		<property name="zip" value = "530001"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Address" >
+		<property name="street" value = "Calicut"/>
+		<property name="city" value = "Kolkata"/>
+		<property name="state" value = "West Bengal"/>
+		<property name="zip" value = "4000098"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	  <context:annotation-config/>
+	
+	<!-- <bean id= "Customer2" class = "Customer">
+		<constructor-arg name="customerId" value = "1234"/>
+		<constructor-arg name="customerName" value = "Nishant"/>
+		<constructor-arg name="customerContact" value = "9948652610"/>
+		<constructor-arg name="customerAddress" ref="Customeradd1"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Address" >
+		<constructor-arg name="street" value = "chipura"/>
+		<constructor-arg name="city" value = "visakhapatnam"/>
+		<constructor-arg name="state" value = "Andhara Pradesh"/>
+		<constructor-arg name="zip" value = "530001"/>
+		<constructor-arg name="country" value = "India"/>
+	</bean> -->
+</beans>
